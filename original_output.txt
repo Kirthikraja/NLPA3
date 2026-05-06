@@ -1,0 +1,48 @@
+=== Pipeline output report ===
+
+--- Raw input text ---
+
+Discharge Diagnosis: Community-acquired pneumonia. Right lower zone consolidation.
+Medications on Discharge: Amoxicillin 500mg PO TID for 7 days. Ibuprofen 400mg PO PRN for fever or pain.
+
+
+--- NER labels extracted (BC5CDR: CHEMICAL, DISEASE) ---
+  [CHEMICAL] Amoxicillin
+  [CHEMICAL] Ibuprofen
+  [DISEASE] fever
+  [DISEASE] pain
+  [DISEASE] pneumonia
+
+
+--- Locked facts (comma-joined string passed to the LLM) ---
+Ibuprofen, Amoxicillin, pneumonia, pain, fever
+
+
+--- Generated patient summary (model output) ---
+
+**Your Care Instructions**
+
+**Diagnosis:** You have a type of lung infection called community-acquired pneumonia, which affects the right lower part of your lungs.
+
+**Medication:**
+
+* Take Amoxicillin (an antibiotic) three times a day (TID) for 7 days. This medicine will help clear up the infection in your lungs.
+* If you have a fever or pain, take Ibuprofen (a pain reliever) as needed. You can take it when you need to relieve your symptoms.
+
+**Red Flags:**
+
+* Watch out for any of these warning signs:
+	+ Your fever gets worse or doesn't go away
+	+ You start coughing up more mucus or blood
+	+ You have trouble breathing or feel like you're not getting enough air
+	+ Your chest hurts or feels tight
+
+Remember to follow your doctor's instructions and take your medication as directed. If you experience any of the red flags, seek medical attention right away.
+
+
+--- Evaluation scores ---
+Reading level (Flesch-Kincaid grade): 9.923870314083082
+Target: <= 8.0
+
+Fact retention (ROUGE-L F1): 0.04
+Target: > 0.0
