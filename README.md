@@ -40,7 +40,7 @@ python -m spacy download en_core_web_sm
 Or run the installation cell at the top of `main_pipeline.ipynb` directly — it handles all of the above.
 
 ---
-
+> **Note:** Only move forward with the below step if the current API Key in the project stops working.
 ## API Key
 
 This project uses the **Groq API** to run Llama 3.3 70b and Llama 3.1 8b.
@@ -95,8 +95,6 @@ The `data/` folder contains two files derived from MIMIC-III:
 
 - `NOTEEVENTS_sorted.csv` — clinical notes, filtered to discharge summary category
 - `PATIENTS_sorted.csv` — patient records used for age calculation (DOB field)
-
-**These files are not included in the repository.** Download them from [PhysioNet](https://physionet.org/content/mimiciii/1.4/) after completing credentialing, and place them in the `data/` folder before running any notebook.
 
 ---
 
