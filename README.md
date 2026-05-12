@@ -1,11 +1,13 @@
 # Clinical Discharge Summary Simplification
 
-## Repo Link
-https://github.com/Kirthikraja/NLPA3
-
 **NLP for Social Good — Leiden University, Spring 2026**
 
 A three-stage NLP pipeline that simplifies clinical discharge summaries from MIMIC-III into patient-facing text targeting a 6th–8th grade reading level, with NER-based fact anchoring to preserve clinical accuracy.
+
+---
+## Repo Link
+Please use this only for reference if you wanna run the code use the zipfile in submission because the dataset is too large to be uploaded to git
+https://github.com/Kirthikraja/NLPA3
 
 ---
 
