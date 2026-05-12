@@ -1,4 +1,8 @@
 # Clinical Discharge Summary Simplification
+
+## Repo Link
+https://github.com/Kirthikraja/NLPA3
+
 **NLP for Social Good — Leiden University, Spring 2026**
 
 A three-stage NLP pipeline that simplifies clinical discharge summaries from MIMIC-III into patient-facing text targeting a 6th–8th grade reading level, with NER-based fact anchoring to preserve clinical accuracy.
@@ -50,7 +54,7 @@ This project uses the **Groq API** to run Llama 3.3 70b and Llama 3.1 8b.
 3. Paste it into the `GROQ_API_KEY` variable in the second cell of `main_pipeline.ipynb`:
 
 ```python
-GROQ_API_KEY = "your_key_here"
+GROQ_API_KEY = "your_api_key"
 ```
 
 ---
@@ -101,3 +105,5 @@ The `data/` folder contains two files derived from MIMIC-III:
 ## Reproducibility
 
 All experiments use `random_state=42` for patient sampling and `temperature=0` for the main pipeline, ensuring identical results across runs. Python 3.11.9 is required to guarantee dependency resolution consistency.
+
+
